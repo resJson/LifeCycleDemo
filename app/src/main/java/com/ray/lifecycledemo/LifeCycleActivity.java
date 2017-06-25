@@ -21,6 +21,7 @@ public class LifeCycleActivity extends AppCompatActivity {
         Log.i(TAG, "onCreate called.");
         setContentView(R.layout.activity_life_cycle);
         TextView btn = (TextView) findViewById(R.id.btn);
+        btn.setText("第一个页面");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

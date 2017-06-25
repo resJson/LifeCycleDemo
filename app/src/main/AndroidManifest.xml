@@ -17,9 +17,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".TwoActivity"
-            android:launchMode="singleTask"/>
+                  android:launchMode="singleTask"
+                  android:taskAffinity="com.ray.test"/>
 
-        <activity android:name=".ThreeActivity"/>
+        <activity android:name=".ThreeActivity"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="com.ray.test"/>
+        <activity android:name=".FourActivity"/>
+
     </application>
 
 </manifest>

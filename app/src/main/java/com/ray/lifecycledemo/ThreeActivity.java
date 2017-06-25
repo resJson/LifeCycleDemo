@@ -24,10 +24,11 @@ public class ThreeActivity extends Activity {
         Log.i(TAG, "onCreate called.");
         setContentView(R.layout.activity_target);
         tv_target = (TextView) findViewById(R.id.tv_target);
+        tv_target.setText("第三个页面");
         tv_target.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ThreeActivity.this, TwoActivity.class);
+                Intent intent = new Intent(ThreeActivity.this, FourActivity.class);
                 startActivity(intent);
             }
         });

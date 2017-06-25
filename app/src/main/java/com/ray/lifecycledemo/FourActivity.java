@@ -3,18 +3,18 @@ package com.ray.lifecycledemo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 /**
- *
- * Created by Ray on 2017/6/13.
+ * Created by wanglei on 2017/6/25.
  */
 
-public class TwoActivity extends Activity {
+public class FourActivity extends Activity {
 
-    private static final String TAG = "TwoActivity";
+    private static final String TAG = "FourActivity";
 
     private TextView tv_target;
 
@@ -24,11 +24,11 @@ public class TwoActivity extends Activity {
         Log.i(TAG, "onCreate called.");
         setContentView(R.layout.activity_target);
         tv_target = (TextView) findViewById(R.id.tv_target);
-        tv_target.setText("第二个页面");
+        tv_target.setText("第四个页面");
         tv_target.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TwoActivity.this, ThreeActivity.class);
+                Intent intent = new Intent(FourActivity.this, ThreeActivity.class);
                 startActivity(intent);
             }
         });
